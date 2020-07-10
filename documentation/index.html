@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>Zuri Homes - Documentation</title>
+    <title>Planite - Documentation</title>
 
     <meta name="description" content="" />
     <meta name="author" content="Team Syntax" />
@@ -141,7 +141,7 @@
         <li><a href="#icons" title="Icons">Icons</a></li>
         <li><a href="#logo" title="Logo">Logo</a></li>
         <li><a href="#sliders" title="Sliders">Sliders</a></li>
-        <li><a href="#google_map" title="Google Map">Google Map</a></li>
+        <li><a href="#on_scroll" title="On Scroll">On Scroll</a></li>
         <li>
           <a href="#sources_and_credits" title="Sources and Credits"
             >Sources and Credits</a
@@ -155,21 +155,18 @@
     </div>
     <div id="documenter_content">
       <section id="documenter_cover">
-        <h1>Zuri Homes Ltd.</h1>
-        <h2>Responsive HTML5 Template</h2>
+        <h1>Planite</h1>
+        <h2>Wedding Planner HTML5 Template</h2>
         <div id="documenter_buttons"></div>
         <hr />
         <ul>
-          <li>created: 03/07/2020</li>
-          <li>latest update: 03/07/2020</li>
-          <li>by: teamsyntax</li>
+          <li>created: 10/07/2020</li>
+          <li>latest update: 10/07/2020</li>
+          <li>by: dammyton</li>
 
           <li>
             email:
-            <a
-              href="mailto:&#104;&#101;&#108;&#108;&#111;&#64;&#104;&#110;&#103;&#46;&#116;&#101;&#99;&#104;"
-              >&#104;&#101;&#108;&#108;&#111;&#64;&#104;&#110;&#103;&#46;&#116;&#101;&#99;&#104;</a
-            >
+            <a href="mailto:owolabidamilola98@gmail.com">owolabidamilola98@gmail.com</a>
           </li>
         </ul>
         <p></p>
@@ -181,9 +178,9 @@
           <hr class="notop" />
         </div>
         <pre class="prettyprint lang-html linenums">
-- assets/css                    (Template CSS)
-- assets/images                    (All Images)
-- assets/js                     (Template JS)</pre
+- style.css                    (Template CSS)
+- /images                    (All Images)
+- index.html                     (Landing Page)</pre
         >
         <p>
           &nbsp;
@@ -250,21 +247,13 @@
           &nbsp;
         </div>
         <pre class="prettyprint lang-html linenums">
-- assets/
-  - css/
-    - global.css                - (Main CSS file) 
-    - homepage.css              - (HomePage Specific CSS file) 
-    - about.css                 - (About Specific CSS file) 
-    - residence.css             - (Residence Specific CSS file) 
-    - contact.css               - (Contact Specific CSS file) 
-    - responsive.css            - (Responsive Styling CSS file) 
-    - slick.css                 - (Slider CSS file) 
-    - slick.theme.css           - (Slider Theme CSS file) 
+    - ./style.css                - (Main CSS file) 
 
-    - bootstrap/bootstrap.min.css - (Bootstrap Minified CSS file)
-    - animate/animate.min.css     - (Animation Minified CSS file)
+    &lt; Latest compiled and minified CSS --&gt;
+  &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"--&gt;
 
-  - fonts/  - contains fonts for slick slider library
+&lt; Font awesome  --&gt;
+  &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"--&gt;
 </pre
         >
       </section>
@@ -298,12 +287,6 @@
 &lt;script src=&quot;./assets/js/popper/popper.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
 &lt;!-- Bootstrap JS --&gt;
 &lt;script src=&quot;./assets/js/bootstrap/bootstrap.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;       
-&lt;!-- Slick JS --&gt;
-&lt;script src=&quot;./assets/js/slick/slick.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;    
-&lt;!-- Wow JS --&gt;
-&lt;script src=&quot;./assets/js/wow/wow.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;   
-&lt;!-- Custom JS --&gt;
-&lt;script src=&quot;./assets/js/custom.js&quot;&gt;&lt;/script&gt;
 </pre
           >
         </div>
@@ -375,8 +358,8 @@
         </div>
         <div>
           <p>
-            We are using svg fonts which you can get more and add to
-            assets/images/icons
+            We are using png fonts which you can get more and add to
+            ./img
           </p>
         </div>
       </section>
@@ -390,7 +373,9 @@
           image logo
         </p>
         <pre class="prettyprint lang-html linenums">
-&lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;./assets/images/...path to your logo<span style="font-family: Arial, Verdana, sans-serif;">... path to your image logo ...</span><span style="font-family: Arial, Verdana, sans-serif;">&quot; alt=&quot;logo&quot; /&gt; &lt;/a&gt;</span>
+          &lt;a class="navbar-brand" href="#"&gt;
+            &lt;img src="./img/Planite.png" alt=""&gt;
+          &lt;/a&gt;
 </pre>
       </section>
       <section id="sliders">
@@ -399,7 +384,7 @@
           <hr class="notop" />
         </div>
         <div>
-          Slick slider is the slider you will find in the content. It's an essay
+          Bootstrap carousels the carousel you will find in the content. It's an essay
           to use lighweight carousel with some decent features.
         </div>
         <div>
@@ -408,137 +393,99 @@
         <div>
           <div>
             <div>
-              Estate Section slider has class &#39;sliders&#39; and each slide
-              has &#39;&lt;div class=&quot;slider-item&quot;&gt;&#39; wrapper
+              The carousel has id &#39;slider&#39; and each slide
+              has &#39;&lt;div class=&quot;carousel-inner&quot;&gt;&#39; wrapper
               for easy find where slide html code start. If you wont remove some
               slide just remove div with all content like this &#39;&lt;div
-              class=&quot;item&quot;&gt;&#39;
+              class=&quot;carousel-item&quot;&gt;&#39;
             </div>
             <div>
               &nbsp;
             </div>
           </div>
           <pre class="prettyprint lang-html linenums">
-&lt;!-- Sliders --&gt;
-&lt;div class=&quot;sliders&quot;&gt;
-    &lt;div class=&quot;row home-sliders&quot;&gt;
-      &lt;div class=&quot;col-md-4 slider-item&quot;&gt;
-          &lt;img src=&quot;./assets/images/sliders/house.png&quot; alt=&quot;Exclusive Apartment&quot; class=&quot;img-fluid slider-img&quot; &gt;
-          &lt;div class=&quot;slider-desc p-2 px-3&quot;&gt;
-            &lt;p class=&quot;slider-name m-0&quot;&gt;Exclusive Apartment&quot;/p&gt;
-            &lt;a href=&quot;#&quot; class=&quot;slider-link&quot;&gt;Explore &gt;&quot;/a&gt;
-          &lt;/div&gt;          
-      &lt;/div&gt;
 
-      &lt;div class=&quot;col-md-4 slider-item&quot;&gt;
-            ...
-      &lt;/div&gt;
+            &lt;!-- Sliders --&gt;
 
-      &lt;div class=&quot;col-md-4 slider-item&quot;&gt;
-            ...
-      &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/section&gt;
-&lt;!-- /.Testimonial --&gt;</pre
-          >
-          <div>
-            &nbsp;
-          </div>
-          <div>
-            If you want change option for sliders you need to open
-            assets/js/custom.js and find &#39;// Our Sliders Start&#39; function
-            and set true/false for option what you wont to change
-          </div>
-          <div>
-            &nbsp;
-          </div>
-          <div>
-            &nbsp;
-          </div>
-          <pre class="prettyprint lang-js linenums">
-// Slick Slider Configuration
-$(document).ready(function () {
-  // Homepage Sliders
-  $('.home-sliders').slick({
-    autoplaySpeed: 2000,
-    slidesToShow: 3,
-    dots: true,
-    prevArrow: $('.prev-btn'),
-    nextArrow: $('.next-btn'),
-  })
+ 
+            &lt;div id="slider" class="carousel slide" data-ride="carousel"&gt;
+            &lt;ol class="carousel-indicators"&gt;
+              &lt;li data-target="#slider" data-slide-to="0" class="active"&gt;&lt;/li&gt;
+              &lt;li data-target="#slider" data-slide-to="1"&gt;&lt;/li&gt;
+              &lt;li data-target="#slider" data-slide-to="2"&gt;&lt;/li&gt;
+              &lt;li data-target="#slider" data-slide-to="3"&gt;&lt;/li&gt;
+              &lt;li data-target="#slider" data-slide-to="4"&gt;&lt;/li&gt;
+            &lt;/ol&gt;
+        
+            &lt;div class="carousel-inner"&gt;
+              &lt;div class="carousel-item active"&gt;
+                &lt;img class="d-block w-100" src="./img/Rectangle 1.png"&gt;
+                &lt;div class="carousel-caption"&gt;
+                  &lt;h3&gt;Your Wedding adventure &lt;br&gt; starts here&lt;/h3&gt;
+                  &lt;p&gt;Inspiration / Planning / Travel&lt;/p&gt;
+                  &lt;a href=""&gt;Plan my wedding&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="carousel-item"&gt;
+                &lt;img class="d-block w-100" src="./img/Rectangle 1.png"&gt;
+                &lt;div class="carousel-caption"&gt;
+                  &lt;h3&gt;Your Wedding adventure &lt;br&gt; starts here&lt;/h3&gt;
+                  &lt;p&gt;Inspiration / Planning / Travel&lt;/p&gt;
+                  &lt;a href=""&gt;Plan my wedding&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="carousel-item"&gt;
+                &lt;img class="d-block w-100" src="./img/Rectangle 1.png"&gt;
+                &lt;div class="carousel-caption"&gt;
+                  &lt;h3&gt;Your Wedding adventure &lt;br&gt; starts here&lt;/h3&gt;
+                  &lt;p&gt;Inspiration / Planning / Travel&lt;/p&gt;
+                  &lt;a href=""&gt;Plan my wedding&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="carousel-item"&gt;
+                &lt;img class="d-block w-100" src="./img/Rectangle 1.png"&gt;
+                &lt;div class="carousel-caption"&gt;
+                  &lt;h3&gt;Your Wedding adventure &lt;br&gt; starts here&lt;/h3&gt;
+                  &lt;p&gt;Inspiration / Planning / Travel&lt;/p&gt;
+                  &lt;a href=""&gt;Plan my wedding&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="carousel-item"&gt;
+                &lt;img class="d-block w-100" src="./img/Rectangle 1.png"&gt;
+                &lt;div class="carousel-caption"&gt;
+                  &lt;h3&gt;Your Wedding adventure &lt;br&gt; starts here&lt;/h3&gt;
+                  &lt;p&gt;Inspiration / Planning / Travel&lt;/p&gt;
+                  &lt;a href=""&gt;Plan my wedding&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
 
-  $('.residence-sliders').slick({
-    autoplaySpeed: 2000,
-    slidesToShow: 4,
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: true,
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slideToScroll: 1,
-        },
-      },
-    ],
-  })
-})
-</pre
-          >
-        </div>
-        <p>
-          You can find more documentation here&nbsp;<a
-            href="https://kenwheeler.github.io/slick/"
-            target="_blank"
-            >https://kenwheeler.github.io/slick/</a
-          >
-        </p>
       </section>
-      <section id="google_map">
+      <section id="on_scroll">
+        
         <div class="page-header">
-          <h3>Google Map</h3>
+          <h3>On Scroll</h3>
           <hr class="notop" />
         </div>
-        <div>
-          The map used in the content is a google map embedded
-        </div>
-        <div>
-          <a href="https://www.google.ng/maps">https://www.google.ng/maps</a>
-        </div>
-        <div>
-          &nbsp;
-        </div>
-        <div>
-          &nbsp;
-        </div>
-        <div>
-          change&nbsp;
-        </div>
-        <pre class="prettyprint lang-html linenums">change the src="https://www.google.com/maps/embed?pb=XXXXXXXX" url
-&lt;iframe
-	src=""
-	width="100%"
-	height="450"
-	frameborder="0"
-	style="border: 0;"
-	allowfullscreen=""
-	aria-hidden="false"
-	tabindex="0"
-&gt;&lt;/iframe&gt;
-		</pre>
+        <pre class="prettyprint lang-js linenums">
 
-        <div>
-          to
-        </div>
-        <pre class="prettyprint lang-html linenums">
-          To your preferred Location
-        </pre>
+          //Navbar on scroll Configuration
+
+          $(document).ready(function () {
+            $(window).scroll(function () {
+              var scroll = $(window).scrollTop();
+              if (scroll > 300) {
+                $(".navbar-dropdown.transparent").css("background", "black");
+              }
+      
+              else {
+                $(".navbar-dropdown.transparent").css("background", "none");
+              }
+            })
+          })
+          </pre
+                    >
       </section>
       <section id="sources_and_credits">
         <div class="page-header">
@@ -577,30 +524,6 @@ $(document).ready(function () {
           >
         </div>
 
-        <div>
-          <strong>Slick Slider</strong>&nbsp;2 -
-          <a href="https://kenwheeler.github.io/slick/" target="_blank"
-            >https://kenwheeler.github.io/slick/</a
-          >
-        </div>
-        <div>
-          <strong>animate.css</strong> -&nbsp;<a
-            href="http://daneden.me/animate"
-            >http://daneden.me/animate</a
-          >
-        </div>
-        <div>
-          <strong>wow.js</strong> -&nbsp;<a
-            href="http://mynameismatthieu.com/WOW/"
-            >http://mynameismatthieu.com/WOW</a
-          >/
-        </div>
-        <div>
-          <strong>jquery.sticky.js</strong> -&nbsp;<a
-            href="http://stickyjs.com/"
-            >http://stickyjs.com/</a
-          >
-        </div>
         <div>
           &nbsp;
         </div>
