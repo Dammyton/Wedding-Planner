@@ -6,7 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Planite</title>
   
+  <!-- glider.js -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+  
+  <!-- aos-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css" integrity="sha512-hoGlO+71fSG6lgS60I4bKvsFVB+bAnrVFDYlwSXoyNLppDcoupwJB7KbWq/63iACKn3gcgK9jMXd+T+YDeVrGQ==" crossorigin="anonymous" /> -->
+
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
@@ -34,8 +40,8 @@
       </button>
       <div class="collapse ml-auto navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item home active">
-            <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">HOME </a>
           </li>
           <li class="nav-item ml-3">
             <a class="nav-link" href="#about">ABOUT US</a>
@@ -71,7 +77,7 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="d-block w-100" src="./img/Rectangle 1.png">
-        <div class="carousel-caption">
+        <div class="carousel-caption" data-aos="zoom-in">
           <h3>Your Wedding adventure <br> starts here</h3>
           <p>Inspiration / Planning / Travel</p>
           <a href="">Plan my wedding</a>
@@ -118,7 +124,7 @@
     <h2>About Me</h2>
     <div class="container">
       <div class="row">
-        <div class="col-md-6 text box">
+        <div class="col-md-6 text box" data-aos="fade-down" >
           <div>
             <p>My name is Christabel Planite i am a wedding planning specialist loated in Carlifonia. I awork with
               theknowledge, planning savvy engaged couples who want to plan independently, but need a professional to
@@ -128,7 +134,7 @@
             <a href="">Read more</a>
           </div>
         </div>
-        <div class="col-md-6 main">
+        <div class="col-md-6 main" data-aos="fade-left" >
           <img src="./img/Group 10.png" alt="">
         </div>
       </div>
@@ -139,7 +145,7 @@
   <div id="services" class="pt-5 pb-5">
     <h2>Services Provided</h2>
     <div class="container">
-      <dv class="row mt-5">
+      <dv class="row mt-5" data-aos="fade-down-right" >
         <div class="col-md-3 mt-2 text-center">
           <img src="./img/Group 12.png" alt="">
           <h3>Transportation booking </h3>
@@ -200,24 +206,6 @@
       <div class="dot"></div>
   </div>
   </div>
-    <!-- <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-3 p-0">
-        <img src="./img/Rectangle 6.png" class="w-100" alt="">
-        </div>
-        <div class="col-md-3 p-0">
-        <img src="./img/Rectangle 7.png" class="w-100" alt="">
-        </div>
-        <div class="col-md-3 p-0">
-        <img src="./img/Rectangle 8.png" class="w-100" alt="">
-        </div>
-        <div class="col-md-3 p-0">
-        <img src="./img/Rectangle 9.png" class="w-100"  alt="">
-        </div>
-      </div>
-      </div>
-    </div>
-  </div> -->
 
 
   <!-- Gallery -->
@@ -225,15 +213,15 @@
     <h2>Gallery</h2>
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-up">
           <img src="./img/Rectangle 11.png" alt="">
         </div>
         <div class="col-md-6">
           <div class="row">
-            <div class="col-md-12 mb-5 mt-2">
+            <div class="col-md-12 mb-5 mt-2" data-aos="fade-down">
               <img src="./img/Rectangle 12.png" alt="">
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12" data-aos="fade-right">
               <img src="./img/Rectangle 13.png" alt="">
             </div>
           </div>
@@ -242,15 +230,15 @@
       <div class="row mt-5">
         <div class="col-md-6">
           <div class="row">
-            <div class="col-md-12 mb-5">
+            <div class="col-md-12 mb-5" data-aos="fade-left">
               <img src="./img/Rectangle 14.png" alt="">
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12" data-aos="fade-up">
               <img src="./img/Rectangle 15.png" alt="">
             </div>
           </div>
         </div>
-        <div class="col-md-6 mt-2">
+        <div class="col-md-6 mt-2" data-aos="fade-up-left">
           <img src="./img/Rectangle 16.png" alt="">
         </div>
       </div>
@@ -281,7 +269,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card middle text-center ml-auto mr-auto">
+          <div class="card middle text-center ml-auto mr-auto" >
             <div class="card-header">
               Standard
             </div>
@@ -302,7 +290,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card box text-center ml-auto mr-auto">
+          <div class="card box text-center ml-auto mr-auto" >
             <div class="card-header">
               Premium
             </div>
@@ -334,41 +322,7 @@
     <h2>What our clients are saying </h2>
   
     <div class="container">
-      <div class="row">
-        <!-- <div class="col-md-4">
-          <div class="card box mt-2 text-center ml-auto mr-auto">
-            <div class="card-body mt-3 mb-3 p-5">
-              <img src="./img/Ellipse 7.png" alt="">
-              <h5 class="card-title">THOMAS JACKSON</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card box mt-2 text-center ml-auto mr-auto">
-            <div class="card-body mt-3 mb-3 p-5">
-              <img src="./img/Ellipse 8.png" alt="">
-              <h5 class="card-title">ANNIE DOE</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mt-2 box text-center ml-auto mr-auto">
-            <div class="card-body mt-3 mb-3 p-5">
-              <img src="./img/Ellipse 6.png" alt="">
-              <h5 class="card-title"> ANGELINA DOE</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt.
-              </p>
-            </div>
-          </div>
-        </div> -->
-     
+      <div class="row" data-aos="fade-in" >
         <div class="glider-contain">
           <div class="glider-prev"><img src="/images/left-arrow.png" alt="" srcset=""></div>
           <div class="glider2">
@@ -491,6 +445,7 @@
     }
 })
 
+// Glider
 new Glider(document.querySelector('.glider2'), {
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -504,7 +459,29 @@ new Glider(document.querySelector('.glider2'), {
 
   </script>
 
+
+<!-- Aos -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js" integrity="sha512-tnNM6PPNOVfZ5sGPw6hThCrcUBeqt2mVEk3EAj8tCtuMHqbuVm5/HsZagrr8W2aaFE+6rKIByGwQbEnmodrYVg==" crossorigin="anonymous"></script> -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+  duration: 1200,
+  });
+  </script>
  
+ <!-- Active menu -->
+ <script>
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("navbarNav");
+  var btns = header.getElementsByClassName("nav-link");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
+  </script>
 </body>
 
 </html>

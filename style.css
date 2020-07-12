@@ -53,14 +53,16 @@ color: #FFFFFF;
 .navbar-dropdown.transparent {
     background: none ;
 }
-.home .nav-link{
+.nav-link.active{
     font-family: Muli;
 font-style: normal;
 font-weight: normal;
 font-size: 15px;
 border-bottom: 1px solid #bb946a;
 line-height: 18px;
-color: #BB946A;
+color: #BB946A !important;    
+transition: all .4s;
+
 }
 .nav-link{
     font-family: Muli;
@@ -68,12 +70,22 @@ font-style: normal;
 font-weight: normal;
 font-size: 15px;
 line-height: 18px;
-color: #FFFFFF;
+color: #FFFFFF !important;
 }
 .nav-link:hover{
-    color:#ccc
+    color:#ccc !important
 }
-
+/* .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+visibility: visible;
+    font-family: Muli;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+border-bottom: 1px solid #bb946a;
+line-height: 18px;
+color: #BB946A;    
+transition: all .4s;
+} */
 #about h2{
 font-family: Adobe Arabic;
 font-style: normal;
